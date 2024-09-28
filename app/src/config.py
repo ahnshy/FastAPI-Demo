@@ -13,7 +13,7 @@ class Config:
 @dataclass
 class LocalConfig(Config):
     PROJ_RELOAD: bool = True
-    DB_URL:str = "mysql+pymysql://"
+    DB_URL:str = "mysql+pymysql://root@localhost:3306/user?serverTimezone=UTC&characterEncoding=UTF-8"
 
 @dataclass
 class ProdConfig(Config):
