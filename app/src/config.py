@@ -13,6 +13,7 @@ class Config:
 @dataclass
 class LocalConfig(Config):
     PROJ_RELOAD: bool = True
+    DB_URL:str = "mysql+pymysql://"
 
 @dataclass
 class ProdConfig(Config):
